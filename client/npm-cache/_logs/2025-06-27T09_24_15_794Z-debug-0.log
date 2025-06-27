@@ -1,0 +1,939 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@9.5.0
+2 info using node@v18.15.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 5ms
+11 timing config:load:file:C:\Users\MOHAMMAD AZHAR\.npmrc Completed in 2ms
+12 timing config:load:user Completed in 2ms
+13 timing config:load:file:C:\Users\MOHAMMAD AZHAR\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 2ms
+15 timing config:load:setEnvs Completed in 4ms
+16 timing config:load Completed in 30ms
+17 timing npm:load:configload Completed in 30ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install vite
+21 verbose argv "install" "vite" "--save-dev"
+22 timing npm:load:setTitle Completed in 4ms
+23 timing config:load:flatten Completed in 8ms
+24 timing npm:load:display Completed in 10ms
+25 verbose logfile logs-max:10 dir:C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\npm-cache\_logs\2025-06-27T09_24_15_794Z-
+26 verbose logfile C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\npm-cache\_logs\2025-06-27T09_24_15_794Z-debug-0.log
+27 timing npm:load:logFile Completed in 20ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 71ms
+31 timing arborist:ctor Completed in 2ms
+32 silly logfile start cleaning logs, removing 3 files
+33 silly logfile error removing log file C:/Users/MOHAMMAD AZHAR/OneDrive/Desktop/Grocify - Major project/client/npm-cache/_logs/2025-06-19T08_45_43_549Z-debug-0.log [Error: EPERM: operation not permitted, lstat 'C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\npm-cache\_logs\2025-06-19T08_45_43_549Z-debug-0.log'] {
+33 silly logfile   errno: -4048,
+33 silly logfile   code: 'EPERM',
+33 silly logfile   syscall: 'lstat',
+33 silly logfile   path: 'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\npm-cache\\_logs\\2025-06-19T08_45_43_549Z-debug-0.log'
+33 silly logfile }
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 613ms
+36 timing idealTree:userRequests Completed in 7ms
+37 silly idealTree buildDeps
+38 silly fetch manifest vite@^6.3.4
+39 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+40 http fetch GET 200 https://registry.npmjs.org/vite 1324ms (cache miss)
+41 silly fetch manifest @types/node@^18.0.0 || ^20.0.0 || >=22.0.0
+42 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 500ms (cache updated)
+43 silly fetch manifest jiti@>=1.21.0
+44 http fetch GET 200 https://registry.npmjs.org/jiti 151ms (cache miss)
+45 silly fetch manifest less@*
+46 http fetch GET 200 https://registry.npmjs.org/less 199ms (cache miss)
+47 silly fetch manifest lightningcss@^1.21.0
+48 http fetch GET 200 https://registry.npmjs.org/lightningcss 117ms (cache miss)
+49 silly fetch manifest sass@*
+50 http fetch GET 200 https://registry.npmjs.org/sass 310ms (cache updated)
+51 silly fetch manifest sass-embedded@*
+52 http fetch GET 200 https://registry.npmjs.org/sass-embedded 142ms (cache miss)
+53 silly fetch manifest stylus@*
+54 http fetch GET 200 https://registry.npmjs.org/stylus 190ms (cache miss)
+55 silly fetch manifest sugarss@*
+56 http fetch GET 200 https://registry.npmjs.org/sugarss 126ms (cache miss)
+57 silly fetch manifest postcss@^8.3.3
+58 http fetch GET 200 https://registry.npmjs.org/postcss 267ms (cache miss)
+59 silly fetch manifest terser@^5.16.0
+60 http fetch GET 200 https://registry.npmjs.org/terser 528ms (cache miss)
+61 silly fetch manifest tsx@^4.8.1
+62 http fetch GET 200 https://registry.npmjs.org/tsx 202ms (cache miss)
+63 silly fetch manifest yaml@^2.4.2
+64 http fetch GET 200 https://registry.npmjs.org/yaml 226ms (cache revalidated)
+65 silly placeDep ROOT vite@6.3.5 REPLACE for: client@0.0.0 want: ^6.3.4
+66 timing idealTree:#root Completed in 4598ms
+67 timing idealTree:node_modules/vite Completed in 0ms
+68 timing idealTree:buildDeps Completed in 4602ms
+69 timing idealTree:fixDepFlags Completed in 12ms
+70 warn EBADENGINE Unsupported engine {
+70 warn EBADENGINE   package: '@eslint/config-array@0.19.2',
+70 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+70 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+70 warn EBADENGINE }
+71 warn EBADENGINE Unsupported engine {
+71 warn EBADENGINE   package: '@eslint/config-helpers@0.2.0',
+71 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+71 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+71 warn EBADENGINE }
+72 warn EBADENGINE Unsupported engine {
+72 warn EBADENGINE   package: '@eslint/core@0.12.0',
+72 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+72 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+72 warn EBADENGINE }
+73 warn EBADENGINE Unsupported engine {
+73 warn EBADENGINE   package: '@eslint/eslintrc@3.3.1',
+73 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+73 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+73 warn EBADENGINE }
+74 warn EBADENGINE Unsupported engine {
+74 warn EBADENGINE   package: '@eslint/js@9.23.0',
+74 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+74 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+74 warn EBADENGINE }
+75 warn EBADENGINE Unsupported engine {
+75 warn EBADENGINE   package: '@eslint/object-schema@2.1.6',
+75 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+75 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+75 warn EBADENGINE }
+76 warn EBADENGINE Unsupported engine {
+76 warn EBADENGINE   package: '@eslint/plugin-kit@0.2.7',
+76 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+76 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+76 warn EBADENGINE }
+77 warn EBADENGINE Unsupported engine {
+77 warn EBADENGINE   package: '@humanfs/core@0.19.1',
+77 warn EBADENGINE   required: { node: '>=18.18.0' },
+77 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+77 warn EBADENGINE }
+78 warn EBADENGINE Unsupported engine {
+78 warn EBADENGINE   package: '@humanfs/node@0.16.6',
+78 warn EBADENGINE   required: { node: '>=18.18.0' },
+78 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+78 warn EBADENGINE }
+79 warn EBADENGINE Unsupported engine {
+79 warn EBADENGINE   package: '@humanwhocodes/retry@0.3.1',
+79 warn EBADENGINE   required: { node: '>=18.18' },
+79 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+79 warn EBADENGINE }
+80 warn EBADENGINE Unsupported engine {
+80 warn EBADENGINE   package: '@humanwhocodes/retry@0.4.2',
+80 warn EBADENGINE   required: { node: '>=18.18' },
+80 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+80 warn EBADENGINE }
+81 warn EBADENGINE Unsupported engine {
+81 warn EBADENGINE   package: 'eslint@9.23.0',
+81 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+81 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+81 warn EBADENGINE }
+82 warn EBADENGINE Unsupported engine {
+82 warn EBADENGINE   package: 'eslint-scope@8.3.0',
+82 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+82 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+82 warn EBADENGINE }
+83 warn EBADENGINE Unsupported engine {
+83 warn EBADENGINE   package: 'eslint-visitor-keys@4.2.0',
+83 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+83 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+83 warn EBADENGINE }
+84 warn EBADENGINE Unsupported engine {
+84 warn EBADENGINE   package: 'espree@10.3.0',
+84 warn EBADENGINE   required: { node: '^18.18.0 || ^20.9.0 || >=21.1.0' },
+84 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+84 warn EBADENGINE }
+85 warn EBADENGINE Unsupported engine {
+85 warn EBADENGINE   package: 'react-router@7.4.0',
+85 warn EBADENGINE   required: { node: '>=20.0.0' },
+85 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+85 warn EBADENGINE }
+86 warn EBADENGINE Unsupported engine {
+86 warn EBADENGINE   package: 'react-router-dom@7.4.0',
+86 warn EBADENGINE   required: { node: '>=20.0.0' },
+86 warn EBADENGINE   current: { node: 'v18.15.0', npm: '9.5.0' }
+86 warn EBADENGINE }
+87 timing idealTree Completed in 5587ms
+88 timing reify:loadTrees Completed in 5589ms
+89 timing reify:diffTrees Completed in 75ms
+90 silly reify mark retired [
+90 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\vite',
+90 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite',
+90 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite.cmd',
+90 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite.ps1'
+90 silly reify ]
+91 silly reify moves {
+91 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\vite': 'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.vite-jTBSj45l',
+91 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite': 'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\.vite-xvjL6ien',
+91 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite.cmd': 'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\.vite.cmd-s6ONgYlf',
+91 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\vite.ps1': 'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\.bin\\.vite.ps1-YANSOYgR'
+91 silly reify }
+92 timing reify:retireShallow Completed in 23ms
+93 timing reify:createSparse Completed in 87ms
+94 timing reify:loadBundles Completed in 0ms
+95 silly audit bulk request {
+95 silly audit   '@ampproject/remapping': [ '2.3.0' ],
+95 silly audit   '@babel/code-frame': [ '7.26.2' ],
+95 silly audit   '@babel/compat-data': [ '7.26.8' ],
+95 silly audit   '@babel/core': [ '7.26.10' ],
+95 silly audit   '@babel/generator': [ '7.27.0' ],
+95 silly audit   '@babel/helper-compilation-targets': [ '7.27.0' ],
+95 silly audit   '@babel/helper-module-imports': [ '7.25.9' ],
+95 silly audit   '@babel/helper-module-transforms': [ '7.26.0' ],
+95 silly audit   '@babel/helper-plugin-utils': [ '7.26.5' ],
+95 silly audit   '@babel/helper-string-parser': [ '7.25.9' ],
+95 silly audit   '@babel/helper-validator-identifier': [ '7.25.9' ],
+95 silly audit   '@babel/helper-validator-option': [ '7.25.9' ],
+95 silly audit   '@babel/helpers': [ '7.27.0' ],
+95 silly audit   '@babel/parser': [ '7.27.0' ],
+95 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.25.9' ],
+95 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.25.9' ],
+95 silly audit   '@babel/runtime': [ '7.27.3' ],
+95 silly audit   '@babel/template': [ '7.27.0' ],
+95 silly audit   '@babel/traverse': [ '7.27.0' ],
+95 silly audit   globals: [ '11.12.0', '14.0.0', '15.15.0' ],
+95 silly audit   '@babel/types': [ '7.27.0' ],
+95 silly audit   '@esbuild/aix-ppc64': [ '0.25.1' ],
+95 silly audit   '@esbuild/android-arm': [ '0.25.1' ],
+95 silly audit   '@esbuild/android-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/android-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/darwin-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/darwin-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/freebsd-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/freebsd-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-arm': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-ia32': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-loong64': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-mips64el': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-ppc64': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-riscv64': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-s390x': [ '0.25.1' ],
+95 silly audit   '@esbuild/linux-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/netbsd-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/netbsd-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/openbsd-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/openbsd-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/sunos-x64': [ '0.25.1' ],
+95 silly audit   '@esbuild/win32-arm64': [ '0.25.1' ],
+95 silly audit   '@esbuild/win32-ia32': [ '0.25.1' ],
+95 silly audit   '@esbuild/win32-x64': [ '0.25.1' ],
+95 silly audit   '@eslint-community/eslint-utils': [ '4.5.1' ],
+95 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.0' ],
+95 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+95 silly audit   '@eslint/config-array': [ '0.19.2' ],
+95 silly audit   '@eslint/config-helpers': [ '0.2.0' ],
+95 silly audit   '@eslint/core': [ '0.12.0' ],
+95 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+95 silly audit   '@eslint/js': [ '9.23.0' ],
+95 silly audit   '@eslint/object-schema': [ '2.1.6' ],
+95 silly audit   '@eslint/plugin-kit': [ '0.2.7' ],
+95 silly audit   '@humanfs/core': [ '0.19.1' ],
+95 silly audit   '@humanfs/node': [ '0.16.6' ],
+95 silly audit   '@humanwhocodes/retry': [ '0.3.1', '0.4.2' ],
+95 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+95 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+95 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+95 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+95 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+95 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+95 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-android-arm64': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-darwin-arm64': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-darwin-x64': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-freebsd-x64': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-loongarch64-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-powerpc64le-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.37.0' ],
+95 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.37.0' ],
+95 silly audit   '@socket.io/component-emitter': [ '3.1.2' ],
+95 silly audit   '@tailwindcss/node': [ '4.0.16' ],
+95 silly audit   tailwindcss: [ '4.0.16', '4.0.17' ],
+95 silly audit   '@tailwindcss/oxide': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.0.16' ],
+95 silly audit   '@tailwindcss/vite': [ '4.0.16' ],
+95 silly audit   '@types/babel__core': [ '7.20.5' ],
+95 silly audit   '@types/babel__generator': [ '7.6.8' ],
+95 silly audit   '@types/babel__template': [ '7.4.4' ],
+95 silly audit   '@types/babel__traverse': [ '7.20.7' ],
+95 silly audit   '@types/cookie': [ '0.6.0' ],
+95 silly audit   '@types/d3-array': [ '3.2.1' ],
+95 silly audit   '@types/d3-color': [ '3.1.3' ],
+95 silly audit   '@types/d3-ease': [ '3.0.2' ],
+95 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+95 silly audit   '@types/d3-path': [ '3.1.1' ],
+95 silly audit   '@types/d3-scale': [ '4.0.9' ],
+95 silly audit   '@types/d3-shape': [ '3.1.7' ],
+95 silly audit   '@types/d3-time': [ '3.0.4' ],
+95 silly audit   '@types/d3-timer': [ '3.0.2' ],
+95 silly audit   '@types/estree': [ '1.0.7', '1.0.6' ],
+95 silly audit   '@types/json-schema': [ '7.0.15' ],
+95 silly audit   '@types/react': [ '19.0.12' ],
+95 silly audit   '@types/react-dom': [ '19.0.4' ],
+95 silly audit   '@vitejs/plugin-react': [ '4.3.4' ],
+95 silly audit   acorn: [ '8.14.1' ],
+95 silly audit   'acorn-jsx': [ '5.3.2' ],
+95 silly audit   ajv: [ '6.12.6' ],
+95 silly audit   'ansi-styles': [ '4.3.0' ],
+95 silly audit   argparse: [ '2.0.1' ],
+95 silly audit   asynckit: [ '0.4.0' ],
+95 silly audit   axios: [ '1.8.4' ],
+95 silly audit   'balanced-match': [ '1.0.2' ],
+95 silly audit   'brace-expansion': [ '1.1.11' ],
+95 silly audit   browserslist: [ '4.24.4' ],
+95 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+95 silly audit   callsites: [ '3.1.0' ],
+95 silly audit   'caniuse-lite': [ '1.0.30001707' ],
+95 silly audit   chalk: [ '4.1.2' ],
+95 silly audit   clsx: [ '2.1.1' ],
+95 silly audit   'color-convert': [ '2.0.1' ],
+95 silly audit   'color-name': [ '1.1.4' ],
+95 silly audit   'combined-stream': [ '1.0.8' ],
+95 silly audit   'concat-map': [ '0.0.1' ],
+95 silly audit   'convert-source-map': [ '2.0.0' ],
+95 silly audit   cookie: [ '1.0.2' ],
+95 silly audit   'cross-spawn': [ '7.0.6' ],
+95 silly audit   csstype: [ '3.1.3' ],
+95 silly audit   'd3-array': [ '3.2.4' ],
+95 silly audit   'd3-color': [ '3.1.0' ],
+95 silly audit   'd3-ease': [ '3.0.1' ],
+95 silly audit   'd3-format': [ '3.1.0' ],
+95 silly audit   'd3-interpolate': [ '3.0.1' ],
+95 silly audit   'd3-path': [ '3.1.0' ],
+95 silly audit   'd3-scale': [ '4.0.2' ],
+95 silly audit   'd3-shape': [ '3.2.0' ],
+95 silly audit   'd3-time': [ '3.1.0' ],
+95 silly audit   'd3-time-format': [ '4.1.0' ],
+95 silly audit   'd3-timer': [ '3.0.1' ],
+95 silly audit   debug: [ '4.4.0', '4.3.7' ],
+95 silly audit   'decimal.js-light': [ '2.5.1' ],
+95 silly audit   'deep-is': [ '0.1.4' ],
+95 silly audit   'delayed-stream': [ '1.0.0' ],
+95 silly audit   'detect-libc': [ '2.0.3' ],
+95 silly audit   'dom-helpers': [ '5.2.1' ],
+95 silly audit   'dunder-proto': [ '1.0.1' ],
+95 silly audit   'electron-to-chromium': [ '1.5.124' ],
+95 silly audit   'engine.io-client': [ '6.6.3' ],
+95 silly audit   'engine.io-parser': [ '5.2.3' ],
+95 silly audit   'enhanced-resolve': [ '5.18.1' ],
+95 silly audit   'es-define-property': [ '1.0.1' ],
+95 silly audit   'es-errors': [ '1.3.0' ],
+95 silly audit   'es-object-atoms': [ '1.1.1' ],
+95 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+95 silly audit   esbuild: [ '0.25.1' ],
+95 silly audit   escalade: [ '3.2.0' ],
+95 silly audit   'escape-string-regexp': [ '4.0.0' ],
+95 silly audit   eslint: [ '9.23.0' ],
+95 silly audit   'eslint-plugin-react-hooks': [ '5.2.0' ],
+95 silly audit   'eslint-plugin-react-refresh': [ '0.4.19' ],
+95 silly audit   'eslint-scope': [ '8.3.0' ],
+95 silly audit   espree: [ '10.3.0' ],
+95 silly audit   esquery: [ '1.6.0' ],
+95 silly audit   esrecurse: [ '4.3.0' ],
+95 silly audit   estraverse: [ '5.3.0' ],
+95 silly audit   esutils: [ '2.0.3' ],
+95 silly audit   eventemitter3: [ '4.0.7' ],
+95 silly audit   'fast-deep-equal': [ '3.1.3' ],
+95 silly audit   'fast-equals': [ '5.2.2' ],
+95 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+95 silly audit   'fast-levenshtein': [ '2.0.6' ],
+95 silly audit   fdir: [ '6.4.4' ],
+95 silly audit   'file-entry-cache': [ '8.0.0' ],
+95 silly audit   'find-up': [ '5.0.0' ],
+95 silly audit   'flat-cache': [ '4.0.1' ],
+95 silly audit   flatted: [ '3.3.3' ],
+95 silly audit   'follow-redirects': [ '1.15.9' ],
+95 silly audit   'form-data': [ '4.0.2' ],
+95 silly audit   fsevents: [ '2.3.3' ],
+95 silly audit   'function-bind': [ '1.1.2' ],
+95 silly audit   gensync: [ '1.0.0-beta.2' ],
+95 silly audit   'get-intrinsic': [ '1.3.0' ],
+95 silly audit   'get-proto': [ '1.0.1' ],
+95 silly audit   'glob-parent': [ '6.0.2' ],
+95 silly audit   goober: [ '2.1.16' ],
+95 silly audit   gopd: [ '1.2.0' ],
+95 silly audit   'graceful-fs': [ '4.2.11' ],
+95 silly audit   'has-flag': [ '4.0.0' ],
+95 silly audit   'has-symbols': [ '1.1.0' ],
+95 silly audit   'has-tostringtag': [ '1.0.2' ],
+95 silly audit   hasown: [ '2.0.2' ],
+95 silly audit   ignore: [ '5.3.2' ],
+95 silly audit   'import-fresh': [ '3.3.1' ],
+95 silly audit   imurmurhash: [ '0.1.4' ],
+95 silly audit   internmap: [ '2.0.3' ],
+95 silly audit   'is-extglob': [ '2.1.1' ],
+95 silly audit   'is-glob': [ '4.0.3' ],
+95 silly audit   isexe: [ '2.0.0' ],
+95 silly audit   jiti: [ '2.4.2' ],
+95 silly audit   'js-tokens': [ '4.0.0' ],
+95 silly audit   'js-yaml': [ '4.1.0' ],
+95 silly audit   jsesc: [ '3.1.0' ],
+95 silly audit   'json-buffer': [ '3.0.1' ],
+95 silly audit   'json-schema-traverse': [ '0.4.1' ],
+95 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+95 silly audit   json5: [ '2.2.3' ],
+95 silly audit   keyv: [ '4.5.4' ],
+95 silly audit   levn: [ '0.4.1' ],
+95 silly audit   lightningcss: [ '1.29.2' ],
+95 silly audit   'lightningcss-darwin-arm64': [ '1.29.2' ],
+95 silly audit   'lightningcss-darwin-x64': [ '1.29.2' ],
+95 silly audit   'lightningcss-freebsd-x64': [ '1.29.2' ],
+95 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.29.2' ],
+95 silly audit   'lightningcss-linux-arm64-gnu': [ '1.29.2' ],
+95 silly audit   'lightningcss-linux-arm64-musl': [ '1.29.2' ],
+95 silly audit   'lightningcss-linux-x64-gnu': [ '1.29.2' ],
+95 silly audit   'lightningcss-linux-x64-musl': [ '1.29.2' ],
+95 silly audit   'lightningcss-win32-arm64-msvc': [ '1.29.2' ],
+95 silly audit   'lightningcss-win32-x64-msvc': [ '1.29.2' ],
+95 silly audit   'locate-path': [ '6.0.0' ],
+95 silly audit   lodash: [ '4.17.21' ],
+95 silly audit   'lodash.merge': [ '4.6.2' ],
+95 silly audit   'loose-envify': [ '1.4.0' ],
+95 silly audit   'lru-cache': [ '5.1.1' ],
+95 silly audit   'math-intrinsics': [ '1.1.0' ],
+95 silly audit   'mime-db': [ '1.52.0' ],
+95 silly audit   'mime-types': [ '2.1.35' ],
+95 silly audit   minimatch: [ '3.1.2' ],
+95 silly audit   ms: [ '2.1.3' ],
+95 silly audit   nanoid: [ '3.3.11' ],
+95 silly audit   'natural-compare': [ '1.4.0' ],
+95 silly audit   'node-releases': [ '2.0.19' ],
+95 silly audit   'object-assign': [ '4.1.1' ],
+95 silly audit   optionator: [ '0.9.4' ],
+95 silly audit   'p-limit': [ '3.1.0' ],
+95 silly audit   'p-locate': [ '5.0.0' ],
+95 silly audit   'parent-module': [ '1.0.1' ],
+95 silly audit   'path-exists': [ '4.0.0' ],
+95 silly audit   'path-key': [ '3.1.1' ],
+95 silly audit   picocolors: [ '1.1.1' ],
+95 silly audit   picomatch: [ '4.0.2' ],
+95 silly audit   postcss: [ '8.5.3' ],
+95 silly audit   'prelude-ls': [ '1.2.1' ],
+95 silly audit   'prop-types': [ '15.8.1' ],
+95 silly audit   'react-is': [ '16.13.1', '18.3.1' ],
+95 silly audit   'proxy-from-env': [ '1.1.0' ],
+95 silly audit   punycode: [ '2.3.1' ],
+95 silly audit   react: [ '19.0.0' ],
+95 silly audit   'react-dom': [ '19.0.0' ],
+95 silly audit   'react-hot-toast': [ '2.5.2' ],
+95 silly audit   'react-refresh': [ '0.14.2' ],
+95 silly audit   'react-router': [ '7.4.0' ],
+95 silly audit   'react-router-dom': [ '7.4.0' ],
+95 silly audit   'react-smooth': [ '4.0.4' ],
+95 silly audit   'react-transition-group': [ '4.4.5' ],
+95 silly audit   recharts: [ '2.15.3' ],
+95 silly audit   'recharts-scale': [ '0.4.5' ],
+95 silly audit   'resolve-from': [ '4.0.0' ],
+95 silly audit   rollup: [ '4.37.0' ],
+95 silly audit   scheduler: [ '0.25.0' ],
+95 silly audit   semver: [ '6.3.1' ],
+95 silly audit   'set-cookie-parser': [ '2.7.1' ],
+95 silly audit   'shebang-command': [ '2.0.0' ],
+95 silly audit   'shebang-regex': [ '3.0.0' ],
+95 silly audit   'socket.io-client': [ '4.8.1' ],
+95 silly audit   'socket.io-parser': [ '4.2.4' ],
+95 silly audit   'source-map-js': [ '1.2.1' ],
+95 silly audit   'strip-json-comments': [ '3.1.1' ],
+95 silly audit   'supports-color': [ '7.2.0' ],
+95 silly audit   tapable: [ '2.2.1' ],
+95 silly audit   'tiny-invariant': [ '1.3.3' ],
+95 silly audit   tinyglobby: [ '0.2.13' ],
+95 silly audit   'turbo-stream': [ '2.4.0' ],
+95 silly audit   'type-check': [ '0.4.0' ],
+95 silly audit   'update-browserslist-db': [ '1.1.3' ],
+95 silly audit   'uri-js': [ '4.4.1' ],
+95 silly audit   'victory-vendor': [ '36.9.2' ],
+95 silly audit   which: [ '2.0.2' ],
+95 silly audit   'word-wrap': [ '1.2.5' ],
+95 silly audit   ws: [ '8.17.1' ],
+95 silly audit   'xmlhttprequest-ssl': [ '2.1.2' ],
+95 silly audit   yallist: [ '3.1.1' ],
+95 silly audit   'yocto-queue': [ '0.1.0' ],
+95 silly audit   vite: [ '6.3.5' ]
+95 silly audit }
+96 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-win32-arm64-msvc
+97 silly reify mark deleted [
+97 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-win32-arm64-msvc'
+97 silly reify ]
+98 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-linux-x64-musl
+99 silly reify mark deleted [
+99 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-linux-x64-musl'
+99 silly reify ]
+100 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-linux-x64-gnu
+101 silly reify mark deleted [
+101 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-linux-x64-gnu'
+101 silly reify ]
+102 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-linux-arm64-musl
+103 silly reify mark deleted [
+103 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-linux-arm64-musl'
+103 silly reify ]
+104 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-linux-arm64-gnu
+105 silly reify mark deleted [
+105 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-linux-arm64-gnu'
+105 silly reify ]
+106 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-linux-arm-gnueabihf
+107 silly reify mark deleted [
+107 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-linux-arm-gnueabihf'
+107 silly reify ]
+108 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-freebsd-x64
+109 silly reify mark deleted [
+109 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-freebsd-x64'
+109 silly reify ]
+110 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-darwin-x64
+111 silly reify mark deleted [
+111 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-darwin-x64'
+111 silly reify ]
+112 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\lightningcss-darwin-arm64
+113 silly reify mark deleted [
+113 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\lightningcss-darwin-arm64'
+113 silly reify ]
+114 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\fsevents
+115 silly reify mark deleted [
+115 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\fsevents'
+115 silly reify ]
+116 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-win32-arm64-msvc
+117 silly reify mark deleted [
+117 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-win32-arm64-msvc'
+117 silly reify ]
+118 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-linux-x64-musl
+119 silly reify mark deleted [
+119 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-linux-x64-musl'
+119 silly reify ]
+120 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-linux-x64-gnu
+121 silly reify mark deleted [
+121 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-linux-x64-gnu'
+121 silly reify ]
+122 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-linux-arm64-musl
+123 silly reify mark deleted [
+123 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-linux-arm64-musl'
+123 silly reify ]
+124 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-linux-arm64-gnu
+125 silly reify mark deleted [
+125 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-linux-arm64-gnu'
+125 silly reify ]
+126 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-linux-arm-gnueabihf
+127 silly reify mark deleted [
+127 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-linux-arm-gnueabihf'
+127 silly reify ]
+128 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-freebsd-x64
+129 silly reify mark deleted [
+129 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-freebsd-x64'
+129 silly reify ]
+130 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-darwin-x64
+131 silly reify mark deleted [
+131 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-darwin-x64'
+131 silly reify ]
+132 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-darwin-arm64
+133 silly reify mark deleted [
+133 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-darwin-arm64'
+133 silly reify ]
+134 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@tailwindcss\oxide-android-arm64
+135 silly reify mark deleted [
+135 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@tailwindcss\\oxide-android-arm64'
+135 silly reify ]
+136 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-win32-ia32-msvc
+137 silly reify mark deleted [
+137 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-win32-ia32-msvc'
+137 silly reify ]
+138 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-win32-arm64-msvc
+139 silly reify mark deleted [
+139 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-win32-arm64-msvc'
+139 silly reify ]
+140 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-x64-musl
+141 silly reify mark deleted [
+141 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-x64-musl'
+141 silly reify ]
+142 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-x64-gnu
+143 silly reify mark deleted [
+143 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+143 silly reify ]
+144 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-s390x-gnu
+145 silly reify mark deleted [
+145 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-s390x-gnu'
+145 silly reify ]
+146 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-riscv64-musl
+147 silly reify mark deleted [
+147 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-riscv64-musl'
+147 silly reify ]
+148 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-riscv64-gnu
+149 silly reify mark deleted [
+149 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-riscv64-gnu'
+149 silly reify ]
+150 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-powerpc64le-gnu
+151 silly reify mark deleted [
+151 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-powerpc64le-gnu'
+151 silly reify ]
+152 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-loongarch64-gnu
+153 silly reify mark deleted [
+153 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-loongarch64-gnu'
+153 silly reify ]
+154 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-arm64-musl
+155 silly reify mark deleted [
+155 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-arm64-musl'
+155 silly reify ]
+156 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-arm64-gnu
+157 silly reify mark deleted [
+157 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-arm64-gnu'
+157 silly reify ]
+158 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-arm-musleabihf
+159 silly reify mark deleted [
+159 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-arm-musleabihf'
+159 silly reify ]
+160 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-linux-arm-gnueabihf
+161 silly reify mark deleted [
+161 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-linux-arm-gnueabihf'
+161 silly reify ]
+162 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-freebsd-x64
+163 silly reify mark deleted [
+163 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-freebsd-x64'
+163 silly reify ]
+164 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-freebsd-arm64
+165 silly reify mark deleted [
+165 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-freebsd-arm64'
+165 silly reify ]
+166 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-darwin-x64
+167 silly reify mark deleted [
+167 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-darwin-x64'
+167 silly reify ]
+168 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-darwin-arm64
+169 silly reify mark deleted [
+169 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-darwin-arm64'
+169 silly reify ]
+170 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-android-arm64
+171 silly reify mark deleted [
+171 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-android-arm64'
+171 silly reify ]
+172 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@rollup\rollup-android-arm-eabi
+173 silly reify mark deleted [
+173 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@rollup\\rollup-android-arm-eabi'
+173 silly reify ]
+174 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\win32-ia32
+175 silly reify mark deleted [
+175 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\win32-ia32'
+175 silly reify ]
+176 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\win32-arm64
+177 silly reify mark deleted [
+177 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\win32-arm64'
+177 silly reify ]
+178 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\sunos-x64
+179 silly reify mark deleted [
+179 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\sunos-x64'
+179 silly reify ]
+180 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\openbsd-x64
+181 silly reify mark deleted [
+181 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\openbsd-x64'
+181 silly reify ]
+182 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\openbsd-arm64
+183 silly reify mark deleted [
+183 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\openbsd-arm64'
+183 silly reify ]
+184 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\netbsd-x64
+185 silly reify mark deleted [
+185 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\netbsd-x64'
+185 silly reify ]
+186 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\netbsd-arm64
+187 silly reify mark deleted [
+187 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\netbsd-arm64'
+187 silly reify ]
+188 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-x64
+189 silly reify mark deleted [
+189 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-x64'
+189 silly reify ]
+190 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-s390x
+191 silly reify mark deleted [
+191 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-s390x'
+191 silly reify ]
+192 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-riscv64
+193 silly reify mark deleted [
+193 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-riscv64'
+193 silly reify ]
+194 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-ppc64
+195 silly reify mark deleted [
+195 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-ppc64'
+195 silly reify ]
+196 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-mips64el
+197 silly reify mark deleted [
+197 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-mips64el'
+197 silly reify ]
+198 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-loong64
+199 silly reify mark deleted [
+199 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-loong64'
+199 silly reify ]
+200 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-ia32
+201 silly reify mark deleted [
+201 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-ia32'
+201 silly reify ]
+202 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-arm64
+203 silly reify mark deleted [
+203 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-arm64'
+203 silly reify ]
+204 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\linux-arm
+205 silly reify mark deleted [
+205 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\linux-arm'
+205 silly reify ]
+206 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\freebsd-x64
+207 silly reify mark deleted [
+207 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\freebsd-x64'
+207 silly reify ]
+208 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\freebsd-arm64
+209 silly reify mark deleted [
+209 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\freebsd-arm64'
+209 silly reify ]
+210 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\darwin-x64
+211 silly reify mark deleted [
+211 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\darwin-x64'
+211 silly reify ]
+212 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\darwin-arm64
+213 silly reify mark deleted [
+213 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\darwin-arm64'
+213 silly reify ]
+214 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\android-x64
+215 silly reify mark deleted [
+215 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\android-x64'
+215 silly reify ]
+216 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\android-arm64
+217 silly reify mark deleted [
+217 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\android-arm64'
+217 silly reify ]
+218 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\android-arm
+219 silly reify mark deleted [
+219 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\android-arm'
+219 silly reify ]
+220 verbose reify failed optional dependency C:\Users\MOHAMMAD AZHAR\OneDrive\Desktop\Grocify - Major project\client\node_modules\@esbuild\aix-ppc64
+221 silly reify mark deleted [
+221 silly reify   'C:\\Users\\MOHAMMAD AZHAR\\OneDrive\\Desktop\\Grocify - Major project\\client\\node_modules\\@esbuild\\aix-ppc64'
+221 silly reify ]
+222 timing reifyNode:node_modules/lightningcss-win32-arm64-msvc Completed in 60ms
+223 timing reifyNode:node_modules/lightningcss-linux-x64-musl Completed in 60ms
+224 timing reifyNode:node_modules/lightningcss-linux-x64-gnu Completed in 60ms
+225 timing reifyNode:node_modules/lightningcss-linux-arm64-musl Completed in 61ms
+226 timing reifyNode:node_modules/lightningcss-linux-arm64-gnu Completed in 61ms
+227 timing reifyNode:node_modules/lightningcss-linux-arm-gnueabihf Completed in 62ms
+228 timing reifyNode:node_modules/lightningcss-freebsd-x64 Completed in 61ms
+229 timing reifyNode:node_modules/lightningcss-darwin-x64 Completed in 61ms
+230 timing reifyNode:node_modules/lightningcss-darwin-arm64 Completed in 60ms
+231 timing reifyNode:node_modules/fsevents Completed in 60ms
+232 timing reifyNode:node_modules/@tailwindcss/oxide-win32-arm64-msvc Completed in 61ms
+233 timing reifyNode:node_modules/@tailwindcss/oxide-linux-x64-musl Completed in 61ms
+234 timing reifyNode:node_modules/@tailwindcss/oxide-linux-x64-gnu Completed in 60ms
+235 timing reifyNode:node_modules/@tailwindcss/oxide-linux-arm64-musl Completed in 60ms
+236 timing reifyNode:node_modules/@tailwindcss/oxide-linux-arm64-gnu Completed in 59ms
+237 timing reifyNode:node_modules/@tailwindcss/oxide-linux-arm-gnueabihf Completed in 60ms
+238 timing reifyNode:node_modules/@tailwindcss/oxide-freebsd-x64 Completed in 61ms
+239 timing reifyNode:node_modules/@tailwindcss/oxide-darwin-x64 Completed in 61ms
+240 timing reifyNode:node_modules/@tailwindcss/oxide-darwin-arm64 Completed in 62ms
+241 timing reifyNode:node_modules/@tailwindcss/oxide-android-arm64 Completed in 63ms
+242 timing reifyNode:node_modules/@rollup/rollup-win32-ia32-msvc Completed in 63ms
+243 timing reifyNode:node_modules/@rollup/rollup-win32-arm64-msvc Completed in 63ms
+244 timing reifyNode:node_modules/@rollup/rollup-linux-x64-musl Completed in 63ms
+245 timing reifyNode:node_modules/@rollup/rollup-linux-x64-gnu Completed in 63ms
+246 timing reifyNode:node_modules/@rollup/rollup-linux-s390x-gnu Completed in 64ms
+247 timing reifyNode:node_modules/@rollup/rollup-linux-riscv64-musl Completed in 63ms
+248 timing reifyNode:node_modules/@rollup/rollup-linux-riscv64-gnu Completed in 63ms
+249 timing reifyNode:node_modules/@rollup/rollup-linux-powerpc64le-gnu Completed in 63ms
+250 timing reifyNode:node_modules/@rollup/rollup-linux-loongarch64-gnu Completed in 63ms
+251 timing reifyNode:node_modules/@rollup/rollup-linux-arm64-musl Completed in 63ms
+252 timing reifyNode:node_modules/@rollup/rollup-linux-arm64-gnu Completed in 62ms
+253 timing reifyNode:node_modules/@rollup/rollup-linux-arm-musleabihf Completed in 62ms
+254 timing reifyNode:node_modules/@rollup/rollup-linux-arm-gnueabihf Completed in 62ms
+255 timing reifyNode:node_modules/@rollup/rollup-freebsd-x64 Completed in 62ms
+256 timing reifyNode:node_modules/@rollup/rollup-freebsd-arm64 Completed in 61ms
+257 timing reifyNode:node_modules/@rollup/rollup-darwin-x64 Completed in 62ms
+258 timing reifyNode:node_modules/@rollup/rollup-darwin-arm64 Completed in 62ms
+259 timing reifyNode:node_modules/@rollup/rollup-android-arm64 Completed in 62ms
+260 timing reifyNode:node_modules/@rollup/rollup-android-arm-eabi Completed in 62ms
+261 timing reifyNode:node_modules/@esbuild/win32-ia32 Completed in 62ms
+262 timing reifyNode:node_modules/@esbuild/win32-arm64 Completed in 61ms
+263 timing reifyNode:node_modules/@esbuild/sunos-x64 Completed in 61ms
+264 timing reifyNode:node_modules/@esbuild/openbsd-x64 Completed in 61ms
+265 timing reifyNode:node_modules/@esbuild/openbsd-arm64 Completed in 61ms
+266 timing reifyNode:node_modules/@esbuild/netbsd-x64 Completed in 61ms
+267 timing reifyNode:node_modules/@esbuild/netbsd-arm64 Completed in 61ms
+268 timing reifyNode:node_modules/@esbuild/linux-x64 Completed in 61ms
+269 timing reifyNode:node_modules/@esbuild/linux-s390x Completed in 61ms
+270 timing reifyNode:node_modules/@esbuild/linux-riscv64 Completed in 61ms
+271 timing reifyNode:node_modules/@esbuild/linux-ppc64 Completed in 61ms
+272 timing reifyNode:node_modules/@esbuild/linux-mips64el Completed in 60ms
+273 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 60ms
+274 timing reifyNode:node_modules/@esbuild/linux-ia32 Completed in 60ms
+275 timing reifyNode:node_modules/@esbuild/linux-arm64 Completed in 60ms
+276 timing reifyNode:node_modules/@esbuild/linux-arm Completed in 60ms
+277 timing reifyNode:node_modules/@esbuild/freebsd-x64 Completed in 60ms
+278 timing reifyNode:node_modules/@esbuild/freebsd-arm64 Completed in 68ms
+279 timing reifyNode:node_modules/@esbuild/darwin-x64 Completed in 68ms
+280 timing reifyNode:node_modules/@esbuild/darwin-arm64 Completed in 68ms
+281 timing reifyNode:node_modules/@esbuild/android-x64 Completed in 69ms
+282 timing reifyNode:node_modules/@esbuild/android-arm64 Completed in 69ms
+283 timing reifyNode:node_modules/@esbuild/android-arm Completed in 68ms
+284 timing reifyNode:node_modules/@esbuild/aix-ppc64 Completed in 68ms
+285 silly tarball no local data for vite@https://registry.npmjs.org/vite/-/vite-6.3.5.tgz. Extracting by manifest.
+286 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 474ms
+287 timing auditReport:getReport Completed in 499ms
+288 silly audit report {
+288 silly audit report   'brace-expansion': [
+288 silly audit report     {
+288 silly audit report       id: 1105443,
+288 silly audit report       url: 'https://github.com/advisories/GHSA-v6h2-p8h4-qcjw',
+288 silly audit report       title: 'brace-expansion Regular Expression Denial of Service vulnerability',
+288 silly audit report       severity: 'low',
+288 silly audit report       vulnerable_versions: '>=1.0.0 <=1.1.11',
+288 silly audit report       cwe: [Array],
+288 silly audit report       cvss: [Object]
+288 silly audit report     }
+288 silly audit report   ],
+288 silly audit report   'react-router': [
+288 silly audit report     {
+288 silly audit report       id: 1104042,
+288 silly audit report       url: 'https://github.com/advisories/GHSA-cpj6-fhp6-mr6j',
+288 silly audit report       title: 'React Router allows pre-render data spoofing on React-Router framework mode',
+288 silly audit report       severity: 'high',
+288 silly audit report       vulnerable_versions: '>=7.0 <=7.5.1',
+288 silly audit report       cwe: [Array],
+288 silly audit report       cvss: [Object]
+288 silly audit report     },
+288 silly audit report     {
+288 silly audit report       id: 1104043,
+288 silly audit report       url: 'https://github.com/advisories/GHSA-f46r-rw29-r322',
+288 silly audit report       title: 'React Router allows a DoS via cache poisoning by forcing SPA mode',
+288 silly audit report       severity: 'high',
+288 silly audit report       vulnerable_versions: '>=7.2.0 <=7.5.1',
+288 silly audit report       cwe: [Array],
+288 silly audit report       cvss: [Object]
+288 silly audit report     }
+288 silly audit report   ]
+288 silly audit report }
+289 timing metavuln:cache:get:security-advisory:brace-expansion:7IQMvcVTr+svbh5KCx4Kl6FQKJ1GciM03BnJAve/5WYJjUeRzKAIrStVpfachbl3T6a7o8nYlQEVG6Ih0TNXRg== Completed in 32ms
+290 timing metavuln:cache:get:security-advisory:react-router:70BFmwwdN5lOZwf7sHB1mEoh1ACiBg3OICCWHffKsUL9ee+JCICZLm7TQwQJdgyVdeSkkVRBJC3UuXZuhSNwhw== Completed in 30ms
+291 timing metavuln:cache:get:security-advisory:react-router:epmAhdzygsw+4zIf6CNdBA1NOIsq90APUA4wcBnrLUW25777c5++9X/+vgHgmIBYQ+2BtCqNQYVMcl+rG5YMtw== Completed in 33ms
+292 http fetch GET 200 https://registry.npmjs.org/brace-expansion 312ms (cache revalidated)
+293 timing metavuln:packument:brace-expansion Completed in 315ms
+294 timing metavuln:load:security-advisory:brace-expansion:1105443 Completed in 10ms
+295 timing metavuln:calculate:security-advisory:brace-expansion:1105443 Completed in 328ms
+296 http fetch GET 200 https://registry.npmjs.org/react-router 424ms (cache updated)
+297 timing metavuln:packument:react-router Completed in 452ms
+298 timing metavuln:load:security-advisory:react-router:1104042 Completed in 33ms
+299 timing metavuln:load:security-advisory:react-router:1104043 Completed in 25ms
+300 timing metavuln:cache:put:security-advisory:react-router:epmAhdzygsw+4zIf6CNdBA1NOIsq90APUA4wcBnrLUW25777c5++9X/+vgHgmIBYQ+2BtCqNQYVMcl+rG5YMtw== Completed in 77ms
+301 timing metavuln:calculate:security-advisory:react-router:1104042 Completed in 568ms
+302 timing metavuln:cache:put:security-advisory:react-router:70BFmwwdN5lOZwf7sHB1mEoh1ACiBg3OICCWHffKsUL9ee+JCICZLm7TQwQJdgyVdeSkkVRBJC3UuXZuhSNwhw== Completed in 63ms
+303 timing metavuln:calculate:security-advisory:react-router:1104043 Completed in 578ms
+304 timing metavuln:cache:get:security-advisory:minimatch:EdzP79sukXfwnaTxyFO/a1+fXPBBvIH9NlsgWGTGWGSpQkNPxYQxFaMxiKCAwfckwBABbsvD1jCrk+QZ4W56Rw== Completed in 30ms
+305 http fetch GET 200 https://registry.npmjs.org/minimatch 182ms (cache revalidated)
+306 timing metavuln:packument:minimatch Completed in 188ms
+307 timing metavuln:load:security-advisory:minimatch:7IQMvcVTr+svbh5KCx4Kl6FQKJ1GciM03BnJAve/5WYJjUeRzKAIrStVpfachbl3T6a7o8nYlQEVG6Ih0TNXRg== Completed in 2ms
+308 timing metavuln:calculate:security-advisory:minimatch:7IQMvcVTr+svbh5KCx4Kl6FQKJ1GciM03BnJAve/5WYJjUeRzKAIrStVpfachbl3T6a7o8nYlQEVG6Ih0TNXRg== Completed in 191ms
+309 timing metavuln:cache:get:security-advisory:react-router-dom:muJ1BeuATufCoLRvQccyaJ7KPhtsNtHyXA5vcsBKzWM0o4U7rzoNuril2DHnX3UeGdm+ZlYltZ6BwAe0/ZtiAA== Completed in 65ms
+310 http fetch GET 200 https://registry.npmjs.org/react-router-dom 419ms (cache updated)
+311 timing metavuln:packument:react-router-dom Completed in 437ms
+312 timing metavuln:load:security-advisory:react-router-dom:epmAhdzygsw+4zIf6CNdBA1NOIsq90APUA4wcBnrLUW25777c5++9X/+vgHgmIBYQ+2BtCqNQYVMcl+rG5YMtw== Completed in 1689ms
+313 timing metavuln:cache:put:security-advisory:react-router-dom:muJ1BeuATufCoLRvQccyaJ7KPhtsNtHyXA5vcsBKzWM0o4U7rzoNuril2DHnX3UeGdm+ZlYltZ6BwAe0/ZtiAA== Completed in 36ms
+314 timing metavuln:calculate:security-advisory:react-router-dom:epmAhdzygsw+4zIf6CNdBA1NOIsq90APUA4wcBnrLUW25777c5++9X/+vgHgmIBYQ+2BtCqNQYVMcl+rG5YMtw== Completed in 2166ms
+315 timing auditReport:init Completed in 2970ms
+316 timing reify:audit Completed in 3474ms
+317 http fetch GET 200 https://registry.npmjs.org/vite/-/vite-6.3.5.tgz 3333ms (cache miss)
+318 timing reifyNode:node_modules/vite Completed in 3455ms
+319 timing reify:unpack Completed in 3471ms
+320 timing reify:unretire Completed in 1ms
+321 timing build:queue Completed in 18ms
+322 timing build:link:node_modules/vite Completed in 89ms
+323 timing build:link Completed in 89ms
+324 timing build:deps Completed in 121ms
+325 timing build Completed in 131ms
+326 timing reify:build Completed in 135ms
+327 timing reify:trash Completed in 516ms
+328 timing reify:save Completed in 225ms
+329 timing reify Completed in 10266ms
+330 silly ADD
+331 silly ADD
+332 silly ADD
+333 silly ADD
+334 silly ADD
+335 silly ADD
+336 silly ADD
+337 silly ADD
+338 silly ADD
+339 silly ADD
+340 silly ADD
+341 silly ADD
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly ADD
+350 silly ADD
+351 silly ADD
+352 silly ADD
+353 silly ADD
+354 silly ADD
+355 silly ADD
+356 silly ADD
+357 silly ADD
+358 silly ADD
+359 silly ADD
+360 silly ADD
+361 silly ADD
+362 silly ADD
+363 silly ADD
+364 silly ADD
+365 silly ADD
+366 silly ADD
+367 silly ADD
+368 silly ADD
+369 silly ADD
+370 silly ADD
+371 silly ADD
+372 silly ADD
+373 silly ADD
+374 silly ADD
+375 silly ADD
+376 silly ADD
+377 silly ADD
+378 silly ADD
+379 silly ADD
+380 silly ADD
+381 silly ADD
+382 silly ADD
+383 silly ADD
+384 silly ADD
+385 silly ADD
+386 silly ADD
+387 silly ADD
+388 silly ADD
+389 silly ADD
+390 silly ADD
+391 silly ADD
+392 silly ADD
+393 silly CHANGE node_modules/vite
+394 timing command:install Completed in 10354ms
+395 verbose exit 0
+396 timing npm Completed in 10495ms
+397 info ok
