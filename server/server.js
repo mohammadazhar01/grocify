@@ -68,3 +68,5 @@ app.set("io",io);
 server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`)
 })
+
+export default server;
