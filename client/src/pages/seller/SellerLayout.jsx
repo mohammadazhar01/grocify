@@ -40,7 +40,7 @@ const SellerLayout = () => {
       },[]);
     
       useEffect(()=>{
-        const socket = io("http://localhost:4000");
+        const socket = io(import.meta.env.VITE_BACKEND_URL);
     
         socket.on("connect",() => {
           console.log("Connected",socket.id);
@@ -60,7 +60,7 @@ const SellerLayout = () => {
                     console.log("executed")
                     const audio = new Audio(assets.order_notification)
                      audio.play();
-                    new Notification("New Order Recieved....:", {body: `Name: ${userName} \n Total Items: ${order.noOfItems} \n Order Amount: ${order.amount}`})
+                    new Notification("New Order Recieved....:", {body: `Name: ${userName} \n Total Items: ${order.noOfItems} \n Order Amount: ${order.amount}`,icon:assets.favicon})
                   } else 
                   {
                     const audio = new Audio(assets.order_notification)

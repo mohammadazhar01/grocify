@@ -77,7 +77,8 @@ import beverages_image from "./beverages_img.png";
 import personal_care_image from "./personal_care_img.png";
 import meat_image from "./meat_img.png";
 import biscuits_image from "./biscuits_img.png";
-import order_notification from "./new-order-notification.mp3"
+import order_notification from "./new-order-notification.mp3";
+import favicon from "./favicon.svg";
 
 
 
@@ -112,6 +113,7 @@ export const assets = {
   add_address_iamge,
   box_icon,
   order_notification,
+  favicon
 };
 
 export const categories = [
