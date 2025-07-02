@@ -17,6 +17,19 @@ const SellerLayout = () => {
         { name: "Product List", path: "/seller/product-list", icon: assets.product_list_icon },
         { name: "Orders", path: "/seller/orders", icon: assets.order_icon },
     ];
+
+    //To unlock the notification for user interaction
+    useEffect(()=>{
+            const unlockAudio = () => {
+                const audio = new Audio();
+                audio.play().catch(()=>{});
+            
+            window.removeEventListener("click",unlockAudio);
+        };
+    
+        window.addEventListener("click",unlockAudio);
+       },[])
+
     const logout = async ()=>{
         try {
             const { data } = await axios.get('/api/seller/logout');
@@ -57,7 +70,6 @@ const SellerLayout = () => {
                   const userName = user.firstName+" "+user.lastName
     
                   if("Notification" in window && Notification.permission === "granted") {
-                    console.log("executed")
                     const audio = new Audio(assets.order_notification)
                      audio.play();
                     new Notification("New Order Recieved....:", {body: `Name: ${userName} \n Total Items: ${order.noOfItems} \n Order Amount: ${order.amount}`,icon:assets.favicon})

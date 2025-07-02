@@ -3,9 +3,21 @@ import { useAppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast';
 
 const SellerLogin = () => {
+
     const {isSeller, setIsSeller, navigate, axios} = useAppContext()
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    useEffect(()=>{
+        const unlockAudio = () => {
+            const audio = new Audio();
+            audio.play().catch(()=>{});
+        
+        window.removeEventListener("click",unlockAudio);
+    };
+
+    window.addEventListener("click",unlockAudio);
+   },[])
 
     const onSubmitHandler = async (event)=>{
         try {
