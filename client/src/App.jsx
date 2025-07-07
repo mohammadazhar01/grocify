@@ -21,9 +21,9 @@ import UpdateProduct from './pages/seller/UpdateProduct';
 import Orders from './pages/seller/Orders';
 import Loading from './components/Loading';
 import AdminDashboard from './pages/seller/AminDashboard';
-import SearchBox from './components/searchBox';
 import Categories from './components/Categories';
 import AllCategories from './pages/AllCategories';
+import SearchBox from './components/SearchBox';
 
 const App = () => {
   const location = useLocation();
@@ -42,7 +42,7 @@ const App = () => {
 
      {isSellerPath ? null : <Navbar/>} 
 
-     {showSearch && <SearchBox/>}
+     {showSearch && <SearchBox />}
 
 
      {showUserLogin ? <Login/> : null}
