@@ -21,10 +21,18 @@ import UpdateProduct from './pages/seller/UpdateProduct';
 import Orders from './pages/seller/Orders';
 import Loading from './components/Loading';
 import AdminDashboard from './pages/seller/AminDashboard';
+import SearchBox from './components/searchBox';
+import Categories from './components/Categories';
+import AllCategories from './pages/AllCategories';
 
 const App = () => {
-
+  const location = useLocation();
   const isSellerPath = useLocation().pathname.includes("seller");
+
+  //displaying search bar only for home and allproduct
+  const showSearch = location.pathname === '/' || location.pathname === '/products';
+
+  
   const {showUserLogin, isSeller} = useAppContext()
   {if(isSeller === null){
     return <div> Loading... </div>
@@ -33,6 +41,10 @@ const App = () => {
     <div className='text-default min-h-screen text-gray-700 bg-white'>
 
      {isSellerPath ? null : <Navbar/>} 
+
+     {showSearch && <SearchBox/>}
+
+
      {showUserLogin ? <Login/> : null}
 
      <Toaster />
@@ -42,6 +54,7 @@ const App = () => {
           <Route path='/' element={<Home/>} />
           <Route path='/products' element={<AllProducts/>} />
           <Route path='/contact' element={<ContactUs/>} />
+          <Route path='/AllCategories' element={<AllCategories/>} />
           <Route path='/products/:category' element={<ProductCategory/>} />
           <Route path='/products/:category/:id' element={<ProductDetails/>} />
           <Route path='/cart' element={<Cart/>} />

@@ -173,7 +173,7 @@ const Cart = () => {
                                     {address.street}, {address.city}, {address.state}, {address.country}
                                 </p>
                             )) }
-                                <p onClick={() => navigate("/add-address")} className="text-primary text-center cursor-pointer p-2 hover:bg-primary/10">
+                                <p onClick={() => {user ? navigate("/add-address"): toast.error("Please Login to Add Address") }} className="text-primary text-center cursor-pointer p-2 hover:bg-primary/10">
                                     Add address
                                 </p>
                             </div>
