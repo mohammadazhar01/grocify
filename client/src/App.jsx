@@ -34,9 +34,13 @@ const App = () => {
 
   
   const {showUserLogin, isSeller} = useAppContext()
-  {if(isSeller === null){
-    return <div> Loading... </div>
-   }}
+
+  const renderSellerRoute = () =>{
+    if(isSeller === null) return <div> Loading... </div>;
+    if(isSeller) return <SellerLayout/>;
+    return <SellerLogin/>
+  }
+  
   return (
     <div className='text-default min-h-screen text-gray-700 bg-white'>
 
@@ -61,7 +65,7 @@ const App = () => {
           <Route path='/add-address' element={<AddAddress/>} />
           <Route path='/my-orders' element={<MyOrders/>} />
           <Route path='/loader' element={<Loading/>} />
-          <Route path='/seller' element={isSeller ? <SellerLayout/> : <SellerLogin/>}>
+          <Route path='/seller' element={renderSellerRoute()}>
             <Route index element={isSeller ? <AdminDashboard/> : null} />
             <Route path='add-product' element={<AddProduct/>} />
             <Route path='product-list' element={<ProductList/>} />
