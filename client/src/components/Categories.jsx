@@ -56,7 +56,7 @@ const Categories = () => {
             See All Categories
             
           </button>  
-        </div>
+      </div>
     </div>
   )
 }
