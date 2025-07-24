@@ -38,7 +38,7 @@ export default function AdminDashboard() {
     setTotalProductCount(products.length)
   }
 
-  console.log(outOfStock)
+  // console.log(outOfStock)
 
 
   const setAmount = ()=>{

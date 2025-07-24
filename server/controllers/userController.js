@@ -1,11 +1,15 @@
 import User from "../models/User.js";
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import otpStore from "../middlewares/otpStore.js";
+import nodemailer from 'nodemailer';
 
 // Register User : /api/user/register
 export const register = async (req, res)=>{
     try {
+        console.log(req.body)
         const { name, email, password } = req.body;
+    
 
         if(!name || !email || !password){
             return res.json({success: false, message: 'Missing Details'})
@@ -16,25 +20,84 @@ export const register = async (req, res)=>{
         if(existingUser)
             return res.json({success: false, message: 'User already exists'})
 
-        const hashedPassword = await bcrypt.hash(password, 10)
+        const otp = Math.floor(100000 + Math.random() * 900000).toString();
+        const expiresAt = Date.now() + 5 * 60 * 1000;
+      
+        otpStore[email] = { otp, expiresAt };
 
-        const user = await User.create({name, email, password: hashedPassword})
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: process.env.EMAIL_USER,
+              pass: process.env.EMAIL_PASS
+            }
+          });
 
-        const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '7d'});
+          console.log(email)
+      
+        try {
+          await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: email,
+            subject: 'Grocify email verification',
+            text: `Your OTP for Grocify is ${otp}. It is valid for 5 minutes.`,
+          });
+      
+          res.json({ success:true, message: 'OTP sent to email.' });
+        } catch (err) {
+          console.error(err);
+          res.status(500).json({ message: 'Failed to send OTP' });
+        }
 
-        res.cookie('token', token, {
-            httpOnly: true, // Prevent JavaScript to access cookie
-            secure: process.env.NODE_ENV === 'production', // Use secure cookies in production
-            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict', // CSRF protection
-            maxAge: 7 * 24 * 60 * 60 * 1000, // Cookie expiration time
-        })
-
-        return res.json({success: true, user: {email: user.email, name: user.name}})
     } catch (error) {
         console.log(error.message);
         res.json({ success: false, message: error.message });
     }
 }
+
+//verify otp : /api/user/verify-otp
+export const verifyOtp = async (req, res) => {
+    try {
+        const { name,email,password, otp } = req.body;
+        const record = otpStore[email];
+      
+        if (!record) {
+          return res.status(400).json({success:false, message: 'No OTP found for this email.' });
+        }
+      
+        if (Date.now() > record.expiresAt) {
+          delete otpStore[email];
+          return res.status(400).json({ success:false,message: 'OTP has expired' });
+        }
+      
+        if (record.otp !== otp) {
+          return res.status(400).json({success:false, message: 'Invalid OTP' });
+        }
+    
+        if( record.otp === otp) {
+            const hashedPassword = await bcrypt.hash(password, 10)
+            // console.log("executed")
+    
+            const user = await User.create({name, email, password: hashedPassword})
+    
+            const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '7d'});
+    
+            res.cookie('token', token, {
+                httpOnly: true, // Prevent JavaScript to access cookie
+                secure: process.env.NODE_ENV === 'production', // Use secure cookies in production
+                sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict', // CSRF protection
+                maxAge: 7 * 24 * 60 * 60 * 1000, // Cookie expiration time
+            })
+            delete otpStore[email];
+    
+            return res.json({success: true, user: {email: user.email, name: user.name}})
+          } 
+        }catch (error) {
+            console.log(error.message);
+            res.json({ success: false, message: error.message });
+        }
+    };
+  
 
 // Login User : /api/user/login
 

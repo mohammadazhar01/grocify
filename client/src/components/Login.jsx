@@ -1,23 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useAppContext } from '../context/AppContext';
 import toast from 'react-hot-toast';
+import VerifyOtp from './VerifyOtp';
 
 const Login = () => {
 
-    const {setShowUserLogin, setUser, axios, navigate} = useAppContext()
+    const {setShowUserLogin, setUser, axios, navigate,state, setState} = useAppContext()
 
-    const [state, setState] = React.useState("login");
-    const [regName, setRegName] = React.useState("");
-    const [regEmail, setRegEmail] = React.useState("");
-    const [regPassword, setRegPassword] = React.useState("");
+    const [regName, setRegName] = useState("");
+    const [regEmail, setRegEmail] = useState("");
+    const [regPassword, setRegPassword] = useState("");
 
-    const [logEmail, setLogEmail] = React.useState("");
-    const [logPassword, setLogPassword] = React.useState("");
+    const [logEmail, setLogEmail] = useState("");
+    const [logPassword, setLogPassword] = useState("");
 
-    const [nameError, setNameError] = React.useState("")
-    const [emailError, setEmailError] = React.useState("")
-    const [passwordError, setPasswordError] = React.useState("")
-    const [isValid, setIsValid] = React.useState(true)
+    const [nameError, setNameError] = useState("")
+    const [emailError, setEmailError] = useState("")
+    const [passwordError, setPasswordError] = useState("")
+    const [isValid, setIsValid] = useState(true)
+
+    const [otpSent, setOtpSent] = useState(false);
 
     const nameValidate = (nameValue) => {
         setIsValid(true)
@@ -62,22 +64,22 @@ const Login = () => {
             event.preventDefault();
 
             if(state === "register"){
-                console.log(isValid)
+                    const name = regName;
+                    const email = regEmail;
+                    const password = regPassword;
+                
+
                 if(isValid){
-                    const {data} = await axios.post(`/api/user/register`,{
-                        name:regName, email:regEmail, password:regPassword
-        
-                    });
+                    const {data} = await axios.post(`/api/user/register`,{name,email, password});
+                    // console.log("ex"+data.success)
                     if (data.success){
-                        navigate('/')
-                        setUser(data.user)
-                        setShowUserLogin(false)
-                        toast.success("Login Successfull")
+                        // console.log("Otp send")
+                        setOtpSent(true)
                     }else {
                         toast.error(data.message)
                     }
                 } else {
-                  console.log("cheekc")
+                //   console.log("cheekc")
 
 
                 }
@@ -85,11 +87,10 @@ const Login = () => {
 
                     const {data} = await axios.post(`/api/user/login`,{
                          email:logEmail, password:logPassword
-        
                     });
 
                     if (data.success){
-                        navigate('/')
+                        navigate('/') 
                         setUser(data.user)
                         setShowUserLogin(false)
                         toast.success("Login Successfull")
@@ -107,9 +108,18 @@ const Login = () => {
     }
 
   return (
+    
+    
+    
     <div onClick={()=> setShowUserLogin(false)} className='fixed top-0 bottom-0 left-0 right-0 z-30 flex items-center text-sm text-gray-600 bg-black/50'>
+      
+     
+      {otpSent ? (
+        <VerifyOtp name={regName} email = {regEmail} password = {regPassword}/>
+      ) :
 
-      <form onSubmit={onSubmitHandler} onClick={(e)=>e.stopPropagation()} className="flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[352px] rounded-lg shadow-xl border border-gray-200 bg-white">
+      (<form onSubmit={onSubmitHandler} onClick={(e)=>e.stopPropagation()} className="relative flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[352px] rounded-lg shadow-xl border border-gray-200 bg-white">
+           <button onClick={()=> setShowUserLogin(false)} className=" cursor-pointer text-grey-100 text-xl absolute top-1 right-4 hover:text-primary">x</button>
             <p className="text-2xl font-medium m-auto">
                 <span className="text-primary">User</span> {state === "login" ? "Login" : "Sign Up"}
             </p>
@@ -134,7 +144,7 @@ const Login = () => {
                     </div>
 
                     <p>
-                      Already have account? <span onClick={() => setState("login")} className="text-primary cursor-pointer">click here</span>
+                      Already have an account? <span onClick={() => setState("login")} className="text-primary cursor-pointer text-decoration-line: underline hover:text-primary-dull">login</span>
                     </p>
                 </div>
             
@@ -155,7 +165,7 @@ const Login = () => {
                     </div>
 
                     <p>
-                    Create an account? <span onClick={() => setState("register")} className="text-primary cursor-pointer">click here</span>
+                    Create an account? <span onClick={() => setState("register")} className="text-primary cursor-pointer text-decoration-line: underline hover:text-primary-dull">register</span>
                 </p>
                 </div>
                 
@@ -165,7 +175,7 @@ const Login = () => {
             <button className="bg-primary hover:bg-primary-dull transition-all text-white w-full py-2 rounded-md cursor-pointer">
                 {state === "register" ? "Create Account" : "Login"}
             </button>
-        </form>
+        </form>)}
     </div>
   )
 }
