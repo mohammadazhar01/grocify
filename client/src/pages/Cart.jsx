@@ -75,7 +75,14 @@ const Cart = () => {
                     // Place Order with Stripe
                     const {data} = await axios.post('/api/order/stripe', {
                         userId: user._id,
-                        items: cartArray.map(item=> ({product: item._id, quantity: item.quantity})),
+                        items: cartArray.map(item=> ( {
+                            product: item._id,
+                            name: item.name,
+                            productimage: item.image[0],
+                            category: item.category,
+                            offerprice: item.offerPrice,
+                            quantity: item.quantity
+                           })),
                         address: selectedAddress._id
                     })
     
